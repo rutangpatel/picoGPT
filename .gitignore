@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
-encoded_data.npy
+encoded_train_data.npy
+picoGPT.weights.h5
 __pycache__/
 *.py[codz]
 *$py.class
