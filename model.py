@@ -9,7 +9,6 @@ class DecoderBlock(tf.keras.layers.Layer):
             num_heads = num_heads,
             key_dim = d_model // num_heads,
             dropout = dropout_rate
-            
         )
 
         # Feed Forward Network

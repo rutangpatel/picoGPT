@@ -45,7 +45,7 @@ if __name__ == "__main__":
     # Warning: This would take long time and might overwhelm the pc, consider running this in colab notebook
     # I ran this on kaggle notebook and it consist of 3.5GB of encoded data so might as well take in consideration
     encoded = np.array(token.encode(text), dtype = np.uint16)
-    np.save("encoded_data.npy", encoded)
+    np.save("encoded_train_data.npy", encoded)
 
     # Information about how long the vocabulary is and number of tokens encoded
     print(f"Vocab Size = {token.vocab_size}")
