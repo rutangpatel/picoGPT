@@ -88,10 +88,3 @@ class GPTModel(tf.keras.Model):
             x = block(x, training = training)
         
         return self.output_layer(x)
-
-# Testing
-model = GPTModel()
-test_input = tf.constant([[72, 69, 76, 76, 79, 1, 87, 79, 82, 76, 68]])
-output = model(test_input)
-print(f"Output shape: {output.shape}")  
-print(f"Trainable vars: {len(model.trainable_variables)}")

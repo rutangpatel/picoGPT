@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 encoded_train_data.npy
 picoGPT.weights.h5
+vocab.json
 __pycache__/
 *.py[codz]
 *$py.class

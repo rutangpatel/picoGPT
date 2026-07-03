@@ -5,6 +5,9 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 import numpy as np
 
+import warnings
+warnings.filterwarnings("ignore")
+
 from model import GPTModel
 from tokenizer import CharTokenizer
 
