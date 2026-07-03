@@ -19,7 +19,7 @@ def generate(model, tokenizer, prompt, max_new_tokens=200, temperature=1.0):
     generated_tokens = []
     
     for _ in range(max_new_tokens):
-        # CRITICAL: Crop to max_seq_len BEFORE passing to model
+        # Crop to max_seq_len BEFORE passing to model
         # We keep the last SEQ_LEN tokens as context
         if input_tensor.shape[1] > SEQ_LEN:
             context = input_tensor[:, -SEQ_LEN:]  # shape: (1, SEQ_LEN)
@@ -79,7 +79,7 @@ def main():
         print("-" * 40)
         
         # Generate and print prompt + generation together
-        generated = generate(model, tokenizer, prompt, max_new_tokens=1000)
+        generated = generate(model, tokenizer, prompt, max_new_tokens=500)
         print(prompt + generated)
 
 if __name__ == "__main__":
